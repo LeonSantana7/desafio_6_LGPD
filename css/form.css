@@ -1,0 +1,163 @@
+.fordform {
+    display: block;
+    width: 100%;
+    border: 1px solid #0051ff;
+    border-radius: 10px;
+    height: 36px;
+    margin: 8px 0;
+    font-size: 13px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    background-color: #001f3f;
+    color: white;
+    transition: border-color 0.3s ease;
+}
+
+.fordform::placeholder {
+    color: #c7d3ff;
+}
+
+.fordform:focus {
+    border-color: #3399ff;
+    outline: none;
+}
+
+select.fordform {
+    background-color: #001f3f;
+    color: white;
+}
+
+
+
+.forms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px 10px;
+    transition: transform 1s ease-in-out;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+}
+
+/*.forms:hover {
+    transform: perspective(1000px) rotateX(4.8deg) rotateY(10.2deg);
+}*/
+
+.inputIconWrap {
+    position: relative;
+    width: 100%;
+}
+
+.inputIconWrap i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3399ff;
+    pointer-events: none;
+    font-size: 14px;
+}
+
+.inputIconWrap input,
+.inputIconWrap select {
+    padding-left: 30px;
+}
+
+
+
+.formsCarro {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.formsStyle {
+    flex: 1 1 350px;
+    max-width: 500px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #001F66, #000000);
+    color: white;
+}
+
+h2.titulo {
+    text-align: left;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.termosNovidades {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.g-recaptcha {
+    margin: 20px 0;
+    transform: scale(0.95);
+    transform-origin: 0 0;
+}
+
+.botaoEnviar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.botaoEnviar button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    opacity: 0.6;
+    transform: none;
+}
+
+.botaoEnviar button {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.botaoEnviar button:hover:not(:disabled) {
+    transform: scale(1.1);
+}
+
+
+button {
+    width: 200px;
+    height: 40px;
+    transition-duration: 0.3s;
+    background-color: #003399;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #001f66;
+}
+
+
+@media (max-width: 768px) {
+    .forms {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formsStyle {
+        width: 100%;
+    }
+
+    .botaoEnviar {
+        justify-content: center;
+    }
+}

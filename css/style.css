@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    background: #FFFFFF;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+div#carousel {
+    height: 46vh;
+    width: 50%;
+    margin-left: 25%;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    margin-top: 5%;
+    background-size: cover;
+    background-position: center center;
+}
+
+div#carousel-title a {
+    text-decoration: none;
+}
+
+div#carousel-title {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+header ul {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+ul {
+    display: inline-block;
+}
+
+header {
+    background: #FFFFFF;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+header div {
+    display: inline;
+    vertical-align: middle;
+}
+
+header nav {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80vw;
+}
+
+header nav a {
+    color: #1351d8;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 900;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+header nav a:hover {
+    color: #1b357e;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+}
+
+main {
+    min-height: calc(100% - 167px);
+}
+
+nav#social {
+    display: inline;
+    width: 80%;
+}
+
+nav#social ul img {
+    width: 28px;
+}
+
+span.redesociais {
+    color: #ffffff;
+    vertical-align: super;
+}
+
+.acessibility {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-left: 1%;
+    transition: all .3s;
+
+}
+
+.acessibility:hover {
+    transform: scale(1.1);
+}
+
+.acessibility img {
+    width: 40px;
+}
+
+footer {
+    background: #1B357E;
+    padding: 20px;
+}
+
+footer div {
+    display: inline;
+    float: right;
+    margin-right: 40px;
+}
+
+button:hover {
+    background: #1b357e;
+}
+
+button {
+    background: #1351d8;
+    color: #fff;
+    border: 0px;
+    border-radius: 10px;
+}
+
+/* Responsividade */
+@media (min-width:1201px) and (max-width: 1928px) {
+    div#carousel {
+        width: 85%;
+        min-width: 85%;
+        margin-left: 10%;
+        height: 80vh;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    div#carousel {
+        width: 80%;
+        min-width: 80%;
+        margin-left: 10%;
+        height: 60vh;
+        background-size: cover;
+    }
+
+    header nav {
+        width: 70%;
+    }
+
+    header nav a {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    footer div {
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    div#carousel {
+        width: 90%;
+        min-width: 90%;
+        margin-left: 5%;
+        height: 50vh;
+        background-size: cover;
+    }
+
+    header nav {
+        width: 90%;
+        margin: 3%;
+    }
+
+    header nav a {
+        font-size: 16px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .logo {
+        width: 15%;
+        margin-left: 39%;
+    }
+
+    footer {
+        text-align: center;
+
+    }
+
+    footer div {
+        float: none;
+        margin-right: 0;
+        margin: 10px;
+
+    }
+
+    nav#social ul {
+        display: flex;
+        justify-content: center;
+        margin-right: 20%;
+        margin: 10px;
+
+    }
+
+    nav#social ul img {
+        width: 24px;
+
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    div#carousel {
+        width: 80%;
+        min-width: 80%;
+        margin-left: 10%;
+        height: 30vh;
+    }
+
+    header nav {
+        width: 90%;
+        margin: 3%;
+    }
+
+    header nav a {
+        font-size: 16px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .logo {
+        width: 15%;
+        margin-left: 39%;
+    }
+
+    footer {
+        text-align: center;
+
+    }
+
+    footer div {
+        float: none;
+        margin-right: 0;
+        margin: 10px;
+
+    }
+
+    nav#social ul {
+        display: flex;
+        justify-content: center;
+        margin-right: 20%;
+        margin: 10px;
+
+    }
+
+    nav#social ul img {
+        width: 24px;
+
+    }
+}
