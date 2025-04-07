@@ -91,6 +91,10 @@ select.fordform {
     color: white;
 }
 
+.formsStyle p a{
+    color: #3399ff;
+}
+
 h2.titulo {
     text-align: left;
     font-weight: 800;

@@ -28,6 +28,7 @@ function Post(form) {
         alert("Por favor, selecione como deseja ser contatado.");
         return false;
     }
+    
 
     const data = new contato(nome, sobrenome, email, cpf, telefone, tipoContato);
 
